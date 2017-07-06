@@ -15,7 +15,7 @@ public class Array2DChallenge {
 
         System.out.println("Choose the method to fill");
         System.out.println("Element by element : 1");
-        System.out.println("Row : 2");
+        System.out.println("Row by element : 2");
 
         int caseNumber = scan.nextInt();
 
@@ -55,7 +55,7 @@ public class Array2DChallenge {
         for (int i = 0; i < 3; i++) {
 
 
-            System.out.println("Select a row number don't repeat a line loop only runs 3 times");
+            System.out.println("Select a row number don't repeat a line loop only runs 3 times remember arrays start at 0");
             int rowNum = scan.nextInt();
 
 
