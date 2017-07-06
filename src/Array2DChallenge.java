@@ -54,10 +54,8 @@ public class Array2DChallenge {
 
         for (int i = 0; i < 3; i++) {
 
-
-            System.out.println("Select a row number don't repeat a line loop only runs 3 times remember arrays start at 0");
-            int rowNum = scan.nextInt();
-
+            System.out.println("Select a row number don't repeat a line loop only runs 3 times");
+            int rowNum = (scan.nextInt() - 1); // adjusts for conventional naming of row number
 
             for (int j = 0; j < arr[rowNum].length; j++) {
 
