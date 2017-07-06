@@ -52,15 +52,22 @@ public class Array2DChallenge {
 
     private static int[][] fillByRow(int arr[][], Scanner scan){
 
-        for (int i = 0; i < arr.length ; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
+        for (int i = 0; i < 3; i++) {
 
-                System.out.print("Enter integers for row " + (i+1) + " column " + (j+1) + ": ");
+
+            System.out.println("Select a row number don't repeat a line loop only runs 3 times");
+            int rowNum = scan.nextInt();
+
+
+            for (int j = 0; j < arr[rowNum].length; j++) {
+
+                System.out.print("Enter integers for row " + rowNum + " column " + j + ": ");
                 int userNum = scan.nextInt();
 
-                arr[i][j] = userNum;
+                arr[rowNum][j] = userNum;
             }
         }
+
         return arr;
     }
 
