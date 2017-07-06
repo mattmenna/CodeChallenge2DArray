@@ -13,6 +13,7 @@ public class Array2DChallenge {
 
         System.out.println("We are going to create a 3 x 3 array.");
 
+
         System.out.println("Choose the method to fill");
         System.out.println("Element by element : 1");
         System.out.println("Row by element : 2");
