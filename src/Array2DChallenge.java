@@ -6,15 +6,19 @@ import java.util.Scanner;
 public class Array2DChallenge {
 
 
-
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int[][] arr = new int[3][3];
 
         System.out.println("We are going to create a 3 x 3 array.");
 
-        System.out.println("Choose the method to fill\n Element by element : 1\nRow : 2");
+        System.out.println("Choose the method to fill");
+        System.out.println("Element by element : 1");
+        System.out.println("Row : 2");
+
         int caseNumber = scan.nextInt();
+
         switch (caseNumber){
             case 1:
                 userFilledArray(arr, scan);
@@ -23,6 +27,7 @@ public class Array2DChallenge {
                 fillByRow(arr, scan);
                 break;
             default:
+                System.out.println("Oops enter 1 or 2!");
                 break;
         }
 
